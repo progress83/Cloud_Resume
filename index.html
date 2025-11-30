@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Progress' Portfolio Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-section border-0">
+      <nav class="navbar navbar-light">
+        <div class="navbar-nav flex-column">
+          <a href="#pigraHome" class="nav-item nav-link active"
+            ><span class="fa fa-home"></span> Home</a
+          >
+          <a href="#pigraAbout" class="nav-item nav-link"
+            ><span class="far fa-address-card"></span> About</a
+          >
+          <a href="#pigraService" class="nav-item nav-link"
+            ><span class="fab fa-servicestack"></span> Service</a
+          >
+          <a href="#pigraContact" class="nav-item nav-link"
+            ><span class="fas fa-address-book"></span> Contact</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid" id="pigraHome">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-12 col-lg-3">
+            <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center">
+                <p class="text-white sub-title">👋 Hi there, I'm Progress </p>
+                <h1 class="display-4 text-white mb-0">
+                  Welcome to my Portfolio Page for the AWS Cloud Resume Challenge
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
+              <div class="row g-5">
+                <div class="col-xl-6">
+                  <div
+                    class="bg-light p-4"
+                    style="
+                      border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;
+                    "
+                  >
+                    <img
+                      src="img/header-img.jpg"
+                      class="img-fluid w-100"
+                      style="
+                        border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;
+                      "
+                      alt="Progress portrait"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <h1 class="display-6 mb-4">Cloud and Devops Engineer</h1>
+
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                    <p class="text-dark mb-0">United Kingdom</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-envelope text-primary me-3"></i>
+                    <a href="mailto:progressbougha83@gmail.com" class="text-dark mb-0">progressbougha83@gmail.com</a>
+                  </div>
+                  <div class="d-flex">
+                    <a class="btn btn-primary btn-sm-square me-3"
+   href="https://www.linkedin.com/in/progress-bougha-0245a0127/"
+   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+  <i class="fab fa-linkedin-in text-white"></i>
+</a>
+                   <a class="btn btn-primary btn-sm-square me-3"
+   href="https://github.com/progress83"
+   target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+  <i class="fab fa-github text-white"></i>
+</a>
+                    <a
+                      class="btn btn-primary btn-sm-square me-3"
+                      href="mailto:progressbougha83@gmail.com"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope text-white"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid" id="pigraAbout">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-12 col-lg-3">
+            <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center">
+                <p class="text-white sub-title">About Me</p>
+                <h1 class="display-6 text-white mb-0">
+                  AWS Certified Engineer
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <div class="about-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-5">
+                <div class="col-xl-5">
+                  <div class="about-img bg-light p-4">
+                    <img src="img/about.jpg" class="img-fluid w-100" alt="Progress at work" />
+                    <div class="sosial-icon">
+                      <a class="btn btn-primary btn-sm-square mb-3"
+   href="https://github.com/progress83?tab=repositories"
+   target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-github text-white"></i>
+</a>
+                      <a class="btn btn-primary btn-sm-square mb-3"
+   href="https://www.linkedin.com/in/progress-bougha-0245a0127/"
+   target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-linkedin-in text-white"></i>
+</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-7">
+                  <p class="mb-4">
+                    I build scalable cloud infrastructures and automate every stage of the delivery lifecycle.
+                    my toolkit includes AWS, Docker, Kubernetes, Terraform, Ansible, Git, CI/CD CodePipeline,
+                    and modern monitoring stacks like Prometheus and Grafana. I am passionate about
+                    turning complex, manual workflows into clean, repeatable automation that accelerates 
+                    development and improves reliability.
+                  </p>
+
+                  <div class="row g-4 mb-4">
+                    <div class="col-6">
+                      <p><strong class="fw-bold text-dark">Open to:</strong> Full-time &amp;</strong>  Contract</p>
+                      <p class="mb-0"><strong class="fw-bold text-dark">Remote:</strong> Available</p>
+                    </div>
+                  </div>
+
+                  <!-- Put your PDF in /assets/resume.pdf -->
+                  <a href="assets/DevopsEngResume.pdf" class="btn btn-primary py-2 px-4" download>
+                    <i class="fas fa-download me-2"></i>Download Resume (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Skills Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">My Technical Skills</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="skills-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fab fa-aws fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">90</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">AWS Cloud infrastructures</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fas fa-shield-alt fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">95</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">Security &amp; IAM</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fas fa-infinity fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">95</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">DevOps</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fab fa-linux fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">85</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">Linux &amp; Windows Administration</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fab fa-python fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">70</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">Python</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fas fa-database fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">90</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">RDS</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fab fa-html5 fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">90</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">HTML/CSS</p>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                  <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-primary text-center mb-3">
+                      <span class="fab fa-github fa-3x"></span>
+                    </div>
+                    <div class="counter-counting d-flex justify-content-center">
+                      <h4 class="display-6" data-toggle="counter-up">98</h4>
+                      <h4 class="display-6">%</h4>
+                    </div>
+                    <p class="mb-0">GitHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills End -->
+
+    <!-- Experience Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">My Professional Background</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="experience-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="fs-5 mb-0 me-4">Cloudspace Consulting LLC</p>
+                      <div>
+                        <span class="fa fa-calendar me-1"></span> 2023 - Till Date
+                      </div>
+                    </div>
+                    <h4 class="mb-3">Software Engineer</h4>
+                    <p class="mb-0">
+                      • Built and maintained AWS-based data pipelines using Lambda, S3,
+                      RDS, and API Gateway.<br />
+                      • Delivered consistent, repeatable infrastructure deployments with CloudFormation
+                      and Terraform.<br />
+                      • Developed CI/CD pipelines using Jenkins and CodeBuild
+                      to automate testing and deployment.<br />
+                      • Automated data processing and normalization with Python and Bash scripting.<br />
+                      • Collaborated closely with teams and clients to ensure technical solutions met 
+                      project requirements.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="fs-5 mb-0 me-4">Medray Medical Diagnostics Limited.</p>
+                      <div>
+                        <span class="fa fa-calendar me-1"></span> 2023 - 2025
+                      </div>
+                    </div>
+                    <h4 class="mb-3">Cloud Operations Engineer</h4>
+                    <p class="mb-0">
+                      <strong>Senior Cloud Operations Engineer (2023 – 2025)</strong><br />
+                      • Supported large-scale data migration projects, normalizing and 
+                      transferring datasets into AWS-hosted applications.<br />
+                      • Implemented and tuned high-availability PostgreSQL clusters 
+                      for production workloads.<br />
+                      • Developed automation scripts in Python to support data ingestion 
+                      and error handling.<br />
+                      • Produced clear documentation and onboarding guides to 
+                      improve handoffs and team alignment.<br />
+                      • Integrated unit and integration testing stages within
+                      CI/CD pipelines for consistent validation.<br />
+                      • Administered Linux/UNIX systems and databases, maintaining secure 
+                      and reliable application performance.
+                      • Collaborated with cross-functional teams to meet SLAs
+                      manage risks, and improve delivery timelines.<br /><br />
+    
+
+                      <strong>Junior Software Developer (2021 – 2023)</strong><br />
+                      • Developed interfaces and backend logic using Python. <br />
+                      • Identified and resolved bugs in distributed software environments.<br />
+                      • articipated in infrastructure improvement projects.<br />
+                      • Monitored logs, troubleshoot issues and root-cause analysis, and
+                      documented troubleshooting procedures.<br />
+                      •	Provided hardware/software/network technical support.<br /><br />
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Experience End -->
+
+    <!-- Certifications Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="experience-header bg-dark h-100 pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">My Certifications</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="experience-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="experience-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="mb-0">
+                      <li>
+                        AWS Certified Cloud Practitioner —
+                        <strong>2025</strong>
+                      </li>
+                      <li>
+                        AWS Certified Solutions Architect – Associate —
+                        <strong>in progress</strong>
+                      </li>
+                      <li>
+                        CoGrammar Bootcamp Software Engineering— <strong>2024</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Certifications End -->
+
+    <!-- Education Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">My Academic Qualifications</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="education-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="fs-5 mb-0 me-4">
+                        AWS Cloud Training Bootcamp 
+                      </p>
+                      <div>
+                        <span class="fa fa-calendar me-1"></span>  2025
+                      </div>
+                    </div>
+                    <h4 class="mb-3">AWS Cloud and Devops Engineer Trainee </h4>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="fs-5 mb-0 me-4">Teesside University</p>
+                      <div>
+                        <span class="fa fa-calendar me-1"></span> 2023 - 2024
+                      </div>
+                    </div>
+                    <h4 class="mb-3">Master of Science, Petroleum Engineering</h4>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="fs-5 mb-0 me-4">University of Benin</p>
+                      <div>
+                        <span class="fa fa-calendar me-1"></span> 2014 - 2018
+                      </div>
+                    </div>
+                    <h4 class="mb-3">Bachelor, Petroleum Engineering</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid" id="pigraService">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="service-header h-100 bg-dark pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">What I Offer</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="service-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-4">
+                <div class="col-12">
+                  <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4 align-items-center">
+                      <div class="col-xl-2">
+                        <i class="fas fa-bezier-curve fa-3x"></i>
+                      </div>
+                      <div class="col-xl-3">
+                        <a href="#" class="h4 mb-0">Problem Solving &amp; System Design</a>
+                      </div>
+                      <div class="col-xl-4">
+                        <p class="mb-0">
+                          I break complex problems into manageable components and design logical, 
+                          scalable system architectures—including frontend, backend, database, 
+                          and API layers. I select the right technologies and frameworks to meet 
+                          performance and business requirements.
+                        </p>
+                      </div>
+                      <div class="col-xl-3">
+                        <p><i class="fa fa-check me-2"></i> System Design</p>
+                        <p><i class="fa fa-check me-2"></i> Research</p>
+                        <p class="mb-0"><i class="fa fa-check me-2"></i> Problem Solving</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                      <div class="col-xl-2">
+                        <i class="fas fa-laptop-code fa-3x"></i>
+                      </div>
+                      <div class="col-xl-3">
+                        <a href="#" class="h4 mb-0">Testing &amp; Debugging</a>
+                      </div>
+                      <div class="col-xl-4">
+                        <p class="mb-0">
+                          I ensure software quality by writing unit and integration tests, 
+                          using debugging tools and log analysis, and automating test workflows 
+                          within CI/CD pipelines.
+                        </p>
+                      </div>
+                      <div class="col-xl-3">
+                        <p><i class="fa fa-check me-2"></i> Unit Testing</p>
+                        <p><i class="fa fa-check me-2"></i> Debugging</p>
+                        <p class="mb-0"><i class="fa fa-check me-2"></i> Test Automation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="service-item p-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                      <div class="col-xl-2">
+                        <i class="fab fa-app-store fa-3x"></i>
+                      </div>
+                      <div class="col-xl-3">
+                        <a href="#" class="h4 mb-0">Deployment &amp; Maintenance</a>
+                      </div>
+                      <div class="col-xl-4">
+                        <p class="mb-0">
+                          I support reliable releases and continuous improvement by managing version 
+                          control with Git/GitHub, using DevOps tools (Docker, Jenkins, Terraform, AWS), 
+                          monitoring system performance, and resolving production issues quickly.
+                        </p>
+                      </div>
+                      <div class="col-xl-3">
+                        <p><i class="fa fa-check me-2"></i> Automation</p>
+                        <p><i class="fa fa-check me-2"></i> Version control</p>
+                        <p class="mb-0"><i class="fa fa-check me-2"></i> Monitoring</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="portfolio-header h-100 bg-dark pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">My Most Recent Projects</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="portfolio-content h-100 pt-6 ps-6 pb-6">
+              <div class="portfolio-item py-5 border-bottom">
+                <div class="row g-4 align-items-center">
+                  <div class="col-xl-6">
+                    <h4 class="text-body">CI/CD Automation</h4>
+                    <h1 class="display-6 mb-0">
+                      Two Stage CI/CD Pipeline with AWS CodePipeline &amp; CodeBuild
+                    </h1>
+                    <p class="mt-3 mb-0">
+                      Designed a two-stage CI/CD pipeline in AWS where each GitHub push triggers CodePipeline 
+                      and CodeBuild to install Python 3.9, verify the version, and execute a custom script that 
+                      outputs my name—demonstrating automated build, validation, and testing workflows using AWS services.
+                    </p>
+                  </div>
+                  <div class="col-9 col-xl-4">
+                    <div class="portfolio-img-inner">
+                      <img
+                        src="img/portfolio1-1.jpg"
+                        class="img-fluid"
+                        alt="CI/CD pipeline illustration"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-3 col-xl-2">
+                    <div class="view-img">
+                      <a href="https://github.com/progress83/2-stage-CI-CD-pipeline"
+   target="_blank" rel="noopener noreferrer"
+   class="btn btn-primary btn-lg-square">
+  <i class="fab fa-github"></i>
+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item py-5 border-bottom">
+                <div class="row g-4 align-items-center">
+                  <div class="col-xl-6">
+                    <h4 class="text-body">Infrastructure as Code</h4>
+                    <h1 class="display-6 mb-0">
+                      Cross Stack CloudFormation for EC2 + Apache
+                    </h1>
+                    <p class="mt-3 mb-0">
+                      Built a cross-stack AWS infrastructure using CloudFormation, deploying an Apache-enabled 
+                      EC2 instance while referencing outputs from a core networking stack. Showcased parameterization, 
+                      mappings, and cross-stack referencing for reusable, scalable IaC.
+                    </p>
+                  </div>
+                  <div class="col-9 col-xl-4">
+                    <div class="portfolio-img-inner">
+                      <img
+                        src="img/portfolio-2.jpg"
+                        class="img-fluid"
+                        alt="Cross-stack architecture diagram"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-3 col-xl-2">
+                    <div class="view-img">
+                      <a href="https://github.com/progress83/AWSCloudResumeChallenge"
+   target="_blank" rel="noopener noreferrer"
+   class="btn btn-primary btn-lg-square">
+  <i class="fab fa-github"></i>
+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item py-5 border-bottom">
+                <div class="row g-4 align-items-center">
+                  <div class="col-xl-6">
+                    <h4 class="text-body">CI/CD / Automation</h4>
+                    <h1 class="display-6 mb-0">Two-Step CI/CD Pipeline to S3</h1>
+                    <p class="mt-3 mb-0">
+                      Developed a lightweight CI/CD pipeline with CodePipeline to pull source from 
+                      GitHub on each push and automatically deploy it to an S3 bucket, enabling 
+                      seamless updates for static site hosting.
+                    </p>
+                  </div>
+                  <div class="col-9 col-xl-4">
+                    <div class="portfolio-img-inner">
+                      <img
+                        src="img/portfolio-3.jpg"
+                        class="img-fluid"
+                        alt="CI/CD pipeline screenshot"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-3 col-xl-2">
+                    <div class="view-img">
+                      <a href="https://github.com/DannyDMA/TwoStepsCI-CD_Pipeline"
+   target="_blank" rel="noopener noreferrer"
+   class="btn btn-primary btn-lg-square">
+  <i class="fab fa-github"></i>
+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="testimonial-header h-100 bg-dark pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">Testimonial</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="testimonial-content h-100 pt-6 ps-6 pb-6">
+              <div class="testimonial-carousel owl-carousel bg-light wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpeg' alt=''>">
+                  <div class="row gy-4 gx-2 mb-4">
+                    <div class="col-sm-6">
+                      <div class="d-flex justify-content-sm-end">
+                        <div
+                          class="testimonial-inner-img border border-primary border-3 me-4"
+                          style="width: 100px; height: 100px"
+                        >
+                          <img
+                            src="img/testimonial-img-1.jpeg"
+                            class="img-fluid"
+                            style="object-fit: cover"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div>
+                        <h5 class="mb-2">Joseph Odiete</h5>
+                        <p class="mb-0">Lecturer, Algonquin College of Applied Arts, Canada</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-sm-center">
+                    <p>
+                      I had the pleasure of working with Progress on a few private projects 
+                      From automation scripts to full-stack deployments, Progress shows remarkable skill 
+                      and attention to detail. She consistently delivers solutions that exceed expectations.
+                      I highly recommend her for any role!.
+                    </p>
+                    <div class="d-flex justify-content-sm-center">
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpeg' alt=''>">
+                  <div class="row gy-4 gx-2 mb-4">
+                    <div class="col-sm-6">
+                      <div class="d-flex justify-content-sm-end">
+                        <div
+                          class="testimonial-inner-img border border-primary border-3 me-4"
+                          style="width: 100px; height: 100px"
+                        >
+                          <img
+                            src="img/testimonial-img-2.jpeg"
+                            class="img-fluid"
+                            style="object-fit: cover"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div>
+                        <h5 class="mb-2">Onyinyechukwu MaryJane Obinka</h5>
+                        <p class="mb-0">Data Analyst, Nigeria</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-sm-center">
+                    <p>
+                      "Progress is an exceptional team player who communicates clearly, supports colleagues, and brings smart, 
+                      reliable solutions to complex problems in record time. Her calm, solution driven approach made her one of the most dependable engineers on our team".
+                    </p>
+                    <div class="d-flex justify-content-sm-center">
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpeg' alt=''>">
+                  <div class="row gy-4 gx-2 mb-4">
+                    <div class="col-sm-6">
+                      <div class="d-flex justify-content-sm-end">
+                        <div
+                          class="testimonial-inner-img border border-primary border-3 me-4"
+                          style="width: 100px; height: 100px"
+                        >
+                          <img
+                            src="img/testimonial-img-3.jpeg"
+                            class="img-fluid"
+                            style="object-fit: cover"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div>
+                        <h5 class="mb-2">Thomas Fokoue</h5>
+                        <p class="mb-0">Quebec, Canada</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-sm-center">
+                    <p>
+                      As a senior team member, I have had the opportunity to observe remarkable growth and consistency in 
+                      Progress' performance. Her mastery of AWS, CI/CD, and infrastructure-as-code has been invaluable to our projects.
+                    </p>
+                    <div class="d-flex justify-content-sm-center">
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                      <i class="fas fa-star text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid" id="pigraContact">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
+              <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 text-white mb-0">Contact Me</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="contact-content h-100 pt-6 ps-6 pb-6">
+              <div class="bg-light p-4">
+                <div class="row g-5">
+                  <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex mb-4">
+                      <div class="btn-xl-square bg-primary text-white me-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div>
+                        <h4>Location</h4>
+                        <p class="mb-0">United Kingdom</p>
+                      </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                      <div class="btn-xl-square bg-primary text-white me-3">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div>
+                        <h4>Mail Me</h4>
+                        <p class="mb-0">progressbougha83@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark border-bottom-0">
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="footer-content h-100 pt-6 ps-6 pb-6">
+              <div class="row g-4 align-items-center">
+                <div class="col-12 text-center">
+                  <div class="d-flex justify-content-center">
+                    <a class="btn btn-primary btn-sm-square me-3"
+   href="https://github.com/progress83"
+   target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+  <i class="fab fa-github text-white"></i>
+</a>
+                    <a class="btn btn-primary btn-sm-square me-3"
+   href="https://www.linkedin.com/in/progress-bougha-0245a0127/"
+   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+  <i class="fab fa-linkedin-in text-white"></i>
+</a>
+                    <a class="btn btn-primary btn-sm-square me-3"
+   href="mailto:progressbougha83@gmail.com"
+   target="_blank" rel="noopener noreferrer" aria-label="gmail">
+  <i class="fas fa-envelope text-white"></i>
+</a>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <span class="text-body"
+                    ><a href="#" class="border-bottom text-white"
+                      ><i class="fas fa-copyright text-body me-2"></i>2025
+                      Progress Bougha</a
+                    >
+                    All rights reserved.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
