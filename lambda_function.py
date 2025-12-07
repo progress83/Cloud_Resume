@@ -2,7 +2,7 @@ import json
 import boto3
 from decimal import Decimal
 
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table("ResumeViewCount")
 
 def decimal_default(obj):
@@ -31,10 +31,20 @@ def lambda_handler(event, context):
 
             return {
                 'statusCode': 200,
+                'headers': {
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Headers": "*",
+                    "Access-Control-Allow-Methods": "GET"
+                },
                 'body': json.dumps({'views': views_count}, default=decimal_default)
             }
 
         return {'statusCode': 400, 'body': json.dumps({'error': 'Invalid HTTP method'})}
 
     except Exception as e:
-        return {'statusCode': 500, 'body': json.dumps({'error': str(e)})}
+        return {'statusCode': 500, 
+                'headers': {
+                    "Access-Control-Allow-Origin": "*"
+                },
+                'body': json.dumps({'error': str(e)})
+        }
