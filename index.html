@@ -961,13 +961,33 @@
       </div>
     </div>
     <!-- Footer End -->
-
+    <script>
+      const functionUrl = "https://vnvxviefzimfukj4rimly4d2ta0ndtvh.lambda-url.us-east-1.on.aws/";
+    
+      async function fetchViewCount() {
+        try {
+          const response = await fetch(functionUrl);
+          const data = await response.json();
+    
+          // Display the view count
+          document.getElementById("viewCount").innerText = data.views;
+        } catch (error) {
+          console.log(error)
+          console.error("Error fetching view count:", error);
+          document.getElementById("viewCount").innerText = "error";
+        }
+      }
+    
+      // Run when the page loads
+      window.onload = fetchViewCount;
+    </script>
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square back-to-top"
       ><i class="fa fa-arrow-up"></i
     ></a>
 
     <!-- JavaScript Libraries -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
