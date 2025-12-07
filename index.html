@@ -976,6 +976,27 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    # View Count
+    <script>
+      const functionUrl = "https://vnvxviefzimfukj4rimly4d2ta0ndtvh.lambda-url.us-east-1.on.aws/";
+    
+      async function fetchViewCount() {
+        try {
+          const response = await fetch(functionUrl);
+          const data = await response.json();
+    
+          // Display the view count
+          document.getElementById("viewCount").innerText = data.views;
+        } catch (error) {
+          console.log(error)
+          console.error("Error fetching view count:", error);
+          document.getElementById("viewCount").innerText = "error";
+        }
+      }
+    
+      // Run when the page loads
+      window.onload = fetchViewCount;
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
