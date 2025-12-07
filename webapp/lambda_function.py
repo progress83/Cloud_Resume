@@ -27,7 +27,7 @@ def lambda_handler(event, context):
             )
 
             # Get the updated view count from the response
-            views_count = response['Attributes']['count']
+            viewCount = response['Attributes']['count']
 
             return {
                 'statusCode': 200,
@@ -36,7 +36,7 @@ def lambda_handler(event, context):
                     "Access-Control-Allow-Headers": "*",
                     "Access-Control-Allow-Methods": "GET"
                 },
-                'body': json.dumps({'views': views_count}, default=decimal_default)
+                'body': json.dumps({'views': viewCount}, default=decimal_default)
             }
 
         return {'statusCode': 400, 'body': json.dumps({'error': 'Invalid HTTP method'})}
